@@ -1,5 +1,8 @@
 A basic api using the CherryPy framework and Python 3.9.4.
 
+Api - server
+Tests - client
+
 Build it
 ==========
 
