@@ -62,13 +62,14 @@ class Departments:
         deps1 = []
         if department == None:
             for dep in userss:
-                inf1.append(userss[dep]["department"])
+                deps1.append(userss[dep]["department"])
             return ('Departments: %s' % list(set(deps1)))
         else:
             for dep in userss:
                 if department in userss[dep]['department']:
-                    inf1.append(userss[dep])       
-        return ('data: %s' % deps2)
+                    deps1.append(userss[dep])       
+        return ('data: %s' % deps1)
+    exposed = True
 
 if __name__ == '__main__':
 # def serv_start():
