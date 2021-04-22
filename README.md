@@ -37,7 +37,7 @@ $ docker run -d -p 8080:8080 tests
 
 From your project directory, start up your application by running:
 ```
-$ docker-compose up
+$ docker-compose up [buildname]
 ```
 
 You can point your browser to http://localhost:8080/ to see the database.
