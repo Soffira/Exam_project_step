@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  api:
+    build: api/
+    command: data.py
+    ports:
+    - 8080:8080
+
+  tests:
+    network_mode: host
+    build: tests/
+    command: sh -c "pytest -v -s tests.py --disable-warnings; tail -f ../dev/null"
+    working_dir: /tests
+    depends_on:
+      - server
