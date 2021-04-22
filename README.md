@@ -28,7 +28,7 @@ $ docker run -d -p 8080:8080 data
 for client:
 
 ```
-$ docker run -d -p 8080:8080 tests .
+$ docker run -d -p 8080:8080 tests
 ```
 
 From your project directory, start up your application by running:
